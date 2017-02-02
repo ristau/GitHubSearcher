@@ -8,21 +8,12 @@ Time spent: **1.5** hours spent in total
 
 The following **required** functionality is complete:
 
-- [ ] Starter Project is set up
-- [ ] GitHub Repo model is augmented to include repo description 
-- [ ] Main repo feed is created 
-- [ ] Table view displays repos
-- [ ] Implemented auto-resizing of cells and auto layout 
-- [ ] Added icons for stars and forks 
-
-
-The following **optional** features are implemented:
-
-- [ ] User sees an error message when there's a networking error.
-- [ ] Movies are displayed using a CollectionView instead of a TableView.
-- [ ] User can search for a movie.
-- [ ] All images fade in as they are loading.
-- [ ] Customize the UI.
+- [X] Starter Project is set up
+- [X] GitHub Repo model is augmented to include repo description 
+- [X] Main repo feed is created 
+- [X] Table view displays repos
+- [X] Implemented auto-resizing of cells and auto layout 
+- [X] Added icons for stars and forks 
 
 ## Video Walkthrough 
 
