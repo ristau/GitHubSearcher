@@ -52,6 +52,7 @@ class GithubRepo: CustomStringConvertible {
       }
       
     }
+  
     
     // Actually fetch the list of repositories from the GitHub API.
     // Calls successCallback(...) if the request is successful
