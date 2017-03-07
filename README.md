@@ -35,7 +35,7 @@ The following **required** functionality is complete:
 
 Here's a walkthrough of implemented user stories:
 
-<img src='http://i.imgur.com/JZ2YBH9.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+<img src='http://i.imgur.com/pAqj4HO.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
 
 GIF created with LiceCap(http://www.cockos.com/licecap/).
 
@@ -43,7 +43,7 @@ GIF created with LiceCap(http://www.cockos.com/licecap/).
 
 ## Notes
 
-Describe any challenges encountered while building the app.
+The initial project was based on Swift 2, and the prepare for Segue function did not work properly (but there was no indicator that this was an issue).  It took a bit of time to troubleshoot this.
 
 ## License
 
