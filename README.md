@@ -25,6 +25,8 @@ GIF created with LiceCap(http://www.cockos.com/licecap/).
 
 # Lab 5 - *GitHubSearcher Part 2*
 
+Time spent: **3** hours spent in total
+
 The following **required** functionality is complete:
 
 - [X] Project is set-up, settings button implemented to modally present to settings view controller
