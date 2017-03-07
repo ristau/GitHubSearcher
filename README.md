@@ -23,6 +23,24 @@ Here's a walkthrough of implemented user stories:
 
 GIF created with LiceCap(http://www.cockos.com/licecap/).
 
+# Lab 5 - *GitHubSearcher Part 2*
+
+The following **required** functionality is complete:
+
+- [X] Project is set-up, settings button implemented to modally present to settings view controller
+- [X] Implemented protocol
+- [X] Implemented search settings to search by number of stars 
+
+## Video Walkthrough 
+
+Here's a walkthrough of implemented user stories:
+
+<img src='http://i.imgur.com/JZ2YBH9.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+
+GIF created with LiceCap(http://www.cockos.com/licecap/).
+
+
+
 ## Notes
 
 Describe any challenges encountered while building the app.
