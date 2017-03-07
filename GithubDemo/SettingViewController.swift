@@ -9,39 +9,49 @@
 import UIKit
 
 
+protocol SettingsPresentingViewControllerDelegate: class {
+  func didSaveSettings(settings: GithubRepoSearchSettings)
+  func didCancelSettings()
+}
+
+
 class SettingViewController: UIViewController {
 
-  weak var delegate: SettingsPresentingViewControllerDelegate?
+  var settingsDelegate: SettingsPresentingViewControllerDelegate?
   
   var settings: GithubRepoSearchSettings!
   var minStars: Int?
+  
+  @IBOutlet weak var minStarsSlider: UISlider!
+  
   
     override func viewDidLoad() {
         super.viewDidLoad()
 
       settings = GithubRepoSearchSettings()
-      settings?.minStars = 3 // update this
-      
-      
-        // Do any additional setup after loading the view.
-    }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
   
   
   @IBAction func saveButtonTapped(_ sender: UIBarButtonItem){
-    self.delegate?.didSaveSettings(settings: settings) 
-    dismiss(animated: true, completion: nil)
+    
+    dismiss(animated: true) {
+      
+      self.settings.minStars = Int(self.minStarsSlider.value)
+      self.settingsDelegate?.didSaveSettings(settings: self.settings)
+    }
+    
+    
+    
   }
 
   
   @IBAction func cancelButtonTapped(_ sender: UIBarButtonItem) {
-    self.delegate?.didCancelSettings()
+  
+    dismiss(animated: true) {
+      self.settingsDelegate?.didCancelSettings()
+    }
     
-    dismiss(animated: true, completion: nil)
   }
   
 
@@ -52,8 +62,3 @@ class SettingViewController: UIViewController {
 
 }
 
-
-protocol SettingsPresentingViewControllerDelegate: class {
-  func didSaveSettings(settings: GithubRepoSearchSettings)
-  func didCancelSettings()
-}

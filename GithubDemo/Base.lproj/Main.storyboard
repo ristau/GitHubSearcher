@@ -121,9 +121,9 @@
                             <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="hfp-4x-afN">
                                 <rect key="frame" x="16" y="7" width="83" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
+                                <state key="normal" title="Settings"/>
                                 <connections>
-                                    <segue destination="GHz-GI-d7k" kind="presentation" identifier="SettingSegue" id="RIo-0x-1p3"/>
+                                    <segue destination="GHz-GI-d7k" kind="presentation" id="Tig-ib-aPn"/>
                                 </connections>
                             </button>
                         </barButtonItem>
@@ -135,7 +135,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="818.39999999999998" y="-558.17091454272872"/>
+            <point key="canvasLocation" x="900" y="-558"/>
         </scene>
         <!--Settings-->
         <scene sceneID="X4E-6A-0qd">
@@ -175,6 +175,9 @@
                             </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="minStarsSlider" destination="xw6-Qo-1f8" id="fiK-UQ-wGf"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mbF-4K-uhX" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

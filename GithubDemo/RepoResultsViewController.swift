@@ -29,7 +29,6 @@ class RepoResultsViewController: UIViewController, UITableViewDataSource, Settin
         // Initialize the UISearchBar
         searchBar = UISearchBar()
         searchBar.delegate = self
-    
       
         settingButton.layer.cornerRadius = 4
       
@@ -86,22 +85,27 @@ class RepoResultsViewController: UIViewController, UITableViewDataSource, Settin
     }
 
 func didSaveSettings(settings: GithubRepoSearchSettings) {
-  
+
+    self.searchSettings = settings
+    print("New Settings - Min stars: \(searchSettings.minStars)")
+    doSearch()
 }
 
 func didCancelSettings() {
-  
+  print("did cancel") 
 }
 
 
-func prepareForSegue(segue: UIStoryboardSegue, sender: Any?) {
-  let navController = segue.destination as! UINavigationController
-  let vc = navController.topViewController as! SettingViewController
- // vc.settings = // Search Settings
-  vc.delegate = self
+override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
   
+    let navController = segue.destination as! UINavigationController
+    let settingsVc = navController.topViewController as! SettingViewController
+    settingsVc.settings = self.searchSettings
+    settingsVc.settingsDelegate = self
   
   }
+  
+  
 }
 
 

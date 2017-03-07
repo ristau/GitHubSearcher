@@ -121,9 +121,9 @@
 			children = (
 				6B2DDEED1B02911A00D25281 /* AppDelegate.swift */,
 				6B2DDEEF1B02911A00D25281 /* RepoResultsViewController.swift */,
+				E51D26D91E67C12000FA6C45 /* SettingViewController.swift */,
 				6B2DDF0D1B02970A00D25281 /* GithubRepo.swift */,
 				6B9F8B091B02B8E4001483E7 /* GithubRepoSearchSettings.swift */,
-				E51D26D91E67C12000FA6C45 /* SettingViewController.swift */,
 				6B2DDEF11B02911A00D25281 /* Main.storyboard */,
 				6B2DDEF41B02911A00D25281 /* Images.xcassets */,
 				6B2DDEF61B02911A00D25281 /* LaunchScreen.xib */,
